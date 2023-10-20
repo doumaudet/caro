@@ -33,6 +33,8 @@ class Questionnaire extends Component {
             question = <Q6 setQuestionS={this.setQuestionSuccess}/>
         else if (this.state.nbQuestionReussit === 6)
             question = <Q7 setQuestionS={this.setQuestionSuccess}/>
+        else if (this.state.nbQuestionReussit === 7)
+            question = "Bravo tu as terminé le questionnaire avec succès !!!"
 
         return (
             <div>
