@@ -12,17 +12,7 @@ function App() {
         <h1>Petit questionnaire amusant pour une femme charmante</h1>
         <Row>
           <Col></Col>
-          <Col></Col>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col></Col>
-          <Col></Col>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col></Col>
-          <Col><Questionnaire /></Col>
+          <Col xs={6}><Questionnaire /></Col>
           <Col></Col>
         </Row>
       </Container>

@@ -12,7 +12,6 @@ class Q7 extends Component {
 
     handle = () => {
         if (this.state.reponse === "6") {
-            console.log("bonne réponse")
             this.props.setQuestionS(7)
         }
         else

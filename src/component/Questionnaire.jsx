@@ -14,7 +14,6 @@ class Questionnaire extends Component {
     }
 
     setQuestionSuccess = (nbQuestion) => {
-        console.log("set State + " + nbQuestion)
         this.setState({ nbQuestionReussit: nbQuestion });
     }
 
