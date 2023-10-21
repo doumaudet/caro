@@ -6,6 +6,7 @@ import Q4 from './Q4';
 import Q5 from './Q5';
 import Q6 from './Q6';
 import Q7 from './Q7';
+import Q8 from './Q8';
 
 class Questionnaire extends Component {
 
@@ -20,22 +21,23 @@ class Questionnaire extends Component {
     render() {
         let question
         if (this.state.nbQuestionReussit === 0)
-            question = <Q1 setQuestionS={this.setQuestionSuccess}/>
+            question = <Q1 setQuestionS={this.setQuestionSuccess} />
         else if (this.state.nbQuestionReussit === 1)
-            question = <Q2 setQuestionS={this.setQuestionSuccess}/>
+            question = <Q2 setQuestionS={this.setQuestionSuccess} />
         else if (this.state.nbQuestionReussit === 2)
-            question = <Q3 setQuestionS={this.setQuestionSuccess}/>
+            question = <Q3 setQuestionS={this.setQuestionSuccess} />
         else if (this.state.nbQuestionReussit === 3)
-            question = <Q4 setQuestionS={this.setQuestionSuccess}/>
+            question = <Q4 setQuestionS={this.setQuestionSuccess} />
         else if (this.state.nbQuestionReussit === 4)
-            question = <Q5 setQuestionS={this.setQuestionSuccess}/>
+            question = <Q5 setQuestionS={this.setQuestionSuccess} />
         else if (this.state.nbQuestionReussit === 5)
-            question = <Q6 setQuestionS={this.setQuestionSuccess}/>
+            question = <Q6 setQuestionS={this.setQuestionSuccess} />
         else if (this.state.nbQuestionReussit === 6)
-            question = <Q7 setQuestionS={this.setQuestionSuccess}/>
+            question = <Q7 setQuestionS={this.setQuestionSuccess} />
         else if (this.state.nbQuestionReussit === 7)
+            question = <Q8 setQuestionS={this.setQuestionSuccess} />
+        else if (this.state.nbQuestionReussit === 8)
             question = "Bravo tu as terminé le questionnaire avec succès !!!"
-
         return (
             <div>
                 {question}
