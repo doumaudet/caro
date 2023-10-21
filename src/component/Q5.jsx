@@ -27,8 +27,9 @@ class Q5 extends Component {
             <div>
                 {(this.state.try !== 0) ? <h2>Mauvaise réponse, essaye de nouveau</h2> : null}
                 <form>
-                    <label>5 - Combien de lumière de chambre papa peut-il ouvrir avec son téléphone ?</label>
+                    <p>5 - Combien de lumière de chambre papa peut-il ouvrir avec son téléphone ?</p>
                     <input type="number" name="reponse" onChange={this.handleForm} />
+                    <p></p>
                 </form>
 
                 <button onClick={this.handle}>Vérifier</button>

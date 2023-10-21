@@ -27,8 +27,9 @@ class Q3 extends Component {
             <div>
                 {(this.state.try !== 0) ? <h2>Mauvaise réponse, essaye de nouveau</h2> : null}
                 <form>
-                    <label>3 - Qu'elle est le nombre préféré des vampires ?</label>
+                    <p>3 - Qu'elle est le nombre préféré des vampires ?</p>
                     <input type="number" name="reponse" onChange={this.handleForm} />
+                    <p></p>
                 </form>
 
                 <button onClick={this.handle}>Vérifier</button>

@@ -28,8 +28,9 @@ class Q1 extends Component {
             <div>
                 {(this.state.try !== 0) ? <h2>Mauvaise réponse, essaye de nouveau</h2> : null}
                 <form>
-                    <label>1 - Qu'elle est le nombre de plante vivante dans la maison ?</label>
+                    <p>1 - Qu'elle est le nombre de plante vivante dans la maison ?</p>
                     <input type="number" name="reponse" onChange={this.handleForm} />
+                    <p></p>
                 </form>
 
                 <button onClick={this.handle}>Vérifier</button>

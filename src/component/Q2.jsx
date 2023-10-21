@@ -27,8 +27,9 @@ class Q2 extends Component {
             <div>
                 {(this.state.try !== 0) ? <h2>Mauvaise réponse, essaye de nouveau</h2> : null}
                 <form>
-                    <label>2 - Combien de livre Méliane a-t-elle dans sa bibliothèque ?</label>
+                    <p>2 - Combien de livre Méliane a-t-elle dans sa bibliothèque ?</p>
                     <input type="number" name="reponse" onChange={this.handleForm} />
+                    <p></p>
                 </form>
 
                 <button onClick={this.handle}>Vérifier</button>

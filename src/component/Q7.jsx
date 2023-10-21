@@ -27,8 +27,9 @@ class Q6 extends Component {
             <div>
                 {(this.state.try !== 0) ? <h2>Mauvaise réponse, essaye de nouveau</h2> : null}
                 <form>
-                    <label>7 - Dans l'expression suivante : n / 5 = 1.6. Que vaut n ?</label>
+                    <p>7 - Dans l'expression suivante : n / 5 = 1.6. Que vaut n ?</p>
                     <input type="number" name="reponse" onChange={this.handleForm} />
+                    <p></p>
                 </form>
 
                 <button onClick={this.handle}>Vérifier</button>

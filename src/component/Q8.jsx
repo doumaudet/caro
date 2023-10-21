@@ -27,14 +27,14 @@ class Q8 extends Component {
             <div>
                 {(this.state.try !== 0) ? <h2>Mauvaise réponse, essaye de nouveau</h2> : null}
                 <form>
-                    <label>8 - Décode le message et inscrit le message caché sans les espace.</label>
+                    <p>8 - Décode le message et inscrit le message caché sans les espace.</p>
                     <input type="texte" name="reponse" onChange={this.handleForm} />
-                    
+                    <p></p>
                 </form>
                 <label>Selon la table d'encryption suivante.</label>
                 <p>481069 3 23 715</p>
                 <button onClick={this.handle}>Vérifier</button>
-
+                <p></p>
                 <table className='w-100 border'>
                     <tbody>{/*warning résolu : https://github.com/facebook/react/issues/5652*/}
                         <tr >

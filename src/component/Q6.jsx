@@ -27,8 +27,9 @@ class Q6 extends Component {
             <div>
                 {(this.state.try !== 0) ? <h2>Mauvaise réponse, essaye de nouveau</h2> : null}
                 <form>
-                    <label>6 - Qu'elle est le nombre de prise hilo dans la maison ?</label>
+                    <p>6 - Qu'elle est le nombre de prise hilo dans la maison ?</p>
                     <input type="number" name="reponse" onChange={this.handleForm} />
+                    <p></p>
                 </form>
 
                 <button onClick={this.handle}>Vérifier</button>
