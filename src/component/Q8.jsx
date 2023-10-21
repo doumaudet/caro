@@ -12,7 +12,7 @@ class Q8 extends Component {
     }
 
     handle = () => {
-        if (this.state.reponse === "SouperaLaFut") {
+        if (this.state.reponse === "Souper a La Fut") {
             this.props.setQuestionS(8)
         }
         else {
@@ -27,7 +27,7 @@ class Q8 extends Component {
             <div>
                 {(this.state.try !== 0) ? <h2>Mauvaise réponse, essaye de nouveau</h2> : null}
                 <form>
-                    <p>8 - Décode le message et inscrit le message caché sans les espace.</p>
+                    <p>8 - Décode et inscrit le message caché avec les espace.</p>
                     <input type="texte" name="reponse" onChange={this.handleForm} />
                     <p></p>
                 </form>
